@@ -220,7 +220,7 @@ class OroWorkflowBundleInstaller implements Installation, ExtendExtensionAwareIn
         $table->addColumn('related_entity', 'string', ['length' => 255]);
         $table->addColumn('entity_attribute_name', 'string', ['length' => 255]);
         $table->addColumn('steps_display_ordered', 'boolean', []);
-        $table->addColumn('system', 'boolean', []);
+        $table->addColumn('system_type', 'boolean', []);
         $table->addColumn('active', 'boolean', ['default' => false]);
         $table->addColumn('priority', 'integer', ['default' => 0]);
         $table->addColumn('configuration', 'array', ['comment' => '(DC2Type:array)']);
